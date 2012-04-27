@@ -9,8 +9,12 @@ import shutil
 import subprocess
 import numpy as np
 from logme import *
-from enthought.traits.api import HasStrictTraits, Str
 import networkx as nx
+# support the new traits api
+try:
+  from traits.api import HasStrictTraits, Str
+except ImportError:
+  from enthought.traits.api import HasStrictTraits, Str
 
 try:
     from pylab import imshow, show, cm, figure
