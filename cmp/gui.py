@@ -28,7 +28,7 @@ except ImportError:
 
 # support the new traits api
 try:
-from traitsui.table_column \
+  from traitsui.table_column \
       import ObjectColumn
 except ImportError:    
   from enthought.traits.ui.table_column \
